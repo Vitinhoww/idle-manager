@@ -1,0 +1,32 @@
+{
+  "name": "idle-manager",
+  "version": "1.1.0",
+  "description": "Multi-account idle game manager",
+  "main": "dist-electron/main/index.js",
+  "author": "Vitinhoww",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Vitinhoww/idle-manager"
+  },
+  "private": false,
+  "scripts": {
+    "dev": "vite",
+    "build:win": "vite build && electron-builder --win",
+    "publish:win": "vite build && electron-builder --win --publish always"
+  },
+  "dependencies": {
+    "electron-updater": "^6.8.11"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.1.2",
+    "electron": "^33.3.1",
+    "electron-builder": "^25.1.8",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "vite": "^6.0.5",
+    "vite-plugin-electron": "^0.28.8",
+    "vite-plugin-electron-renderer": "^0.14.6"
+  }
+}
